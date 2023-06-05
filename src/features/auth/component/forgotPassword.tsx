@@ -2,7 +2,6 @@ import { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Formik, FormikValues, Field, ErrorMessage, Form } from 'formik';
 
-import * as Yup from 'yup';
 import HttpService from 'shared/services/http.service';
 import { API_CONFIG } from 'shared/constants/api';
 import { notify } from 'shared/components/notification/notification';

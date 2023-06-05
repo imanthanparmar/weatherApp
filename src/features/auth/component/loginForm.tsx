@@ -2,7 +2,6 @@ import React, { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { Formik, FormikValues, Field, ErrorMessage, Form } from 'formik';
-import * as Yup from 'yup';
 
 import AuthService from 'shared/services/auth.service';
 import HttpService from 'shared/services/http.service';

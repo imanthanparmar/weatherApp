@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Formik, FormikValues, Field, ErrorMessage, Form } from 'formik';
-import * as Yup from 'yup';
 
 import { HidePasswordIcon, ShowPasswordIcon } from 'shared/components/icons/icons';
 import HttpService from 'shared/services/http.service';
