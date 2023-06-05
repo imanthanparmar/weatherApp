@@ -638,6 +638,22 @@
 	@extend %flex;
 }
 
+.flex--1 {
+	flex: 1;
+}
+
+.flex--2 {
+	flex: 2;
+}
+
+.flex--3 {
+	flex: 3;
+}
+
+.flex--4 {
+	flex: 4;
+}
+
 .flex--column {
 	@extend %flex--column;
 }
@@ -1308,6 +1324,10 @@
 
 .border-radius--xxl {
 	border-radius: $border-radius-xxl;
+}
+
+.border-radius--xl {
+	border-radius: $border-radius-xl;
 }
 
 .border-radius--half {
