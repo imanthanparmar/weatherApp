@@ -8,7 +8,7 @@ const App: React.FC = () => {
 	return (
 		<Layout>
 			<Routes>
-				<Route path='/weatherForecast' element={<WeatherForecastContainer />} />
+				<Route path='/' element={<WeatherForecastContainer />} />
 			</Routes>
 		</Layout>
 	);
