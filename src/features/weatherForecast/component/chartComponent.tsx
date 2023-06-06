@@ -17,7 +17,6 @@ interface IProps {
 
 const ChartComponet: React.FC<IProps> = (props) => {
 	const { weatherData } = props;
-	console.log('weatherData inside chart :>> ', weatherData);
 	ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 	const options = {

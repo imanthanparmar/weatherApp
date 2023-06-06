@@ -7,7 +7,7 @@ interface Props {
 	className?: string;
 	placeholder?: string;
 	disabled?: boolean;
-	handleOnEnter?: (key: string) => void;
+	handleOnEnter?: (key: React.KeyboardEvent<HTMLInputElement>) => void;
 	clearable?: boolean;
 	clearSearch?: () => void;
 }
@@ -28,7 +28,7 @@ const Search = (props: Props) => {
 				onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleOnSearch(e)}
 				disabled={disabled}
 				onKeyUp={(event) => {
-					handleOnEnter && handleOnEnter(event.key);
+					handleOnEnter && handleOnEnter(event);
 				}}
 			/>
 		</div>
