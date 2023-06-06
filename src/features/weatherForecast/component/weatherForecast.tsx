@@ -9,6 +9,7 @@ import { debounce } from 'shared/util/utility';
 import WeatherSideNav from './sidenav';
 import WeatherMainContent from './weatherMainContent';
 import { IWeatherForecastData } from '../interface/weatherForecast.interface';
+import { notify } from 'shared/components/notification/notification';
 
 const WeatherForecast: React.FC = () => {
 	const [weatherData, setWeatherData] = useState({} as IWeatherForecastData);
@@ -27,6 +28,7 @@ const WeatherForecast: React.FC = () => {
 			})
 			.catch((err) => {
 				console.error(err);
+				notify('Please enter  a valid city name', 'error');
 				setLoading(false);
 			});
 	}, []);
