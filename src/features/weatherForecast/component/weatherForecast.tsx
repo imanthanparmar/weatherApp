@@ -17,7 +17,7 @@ const WeatherForecast: React.FC = () => {
 	const fetchForecastData = useCallback((searchWord?: string) => {
 		setLoading(true);
 		HttpService.get(
-			`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${
+			`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${
 				searchWord ? searchWord : 'Ahmedabad'
 			}&days=07&aqi=no&alerts=no`
 		)
